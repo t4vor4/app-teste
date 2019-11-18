@@ -5,7 +5,7 @@ import axios from 'axios';
 
 const $ = el => document.querySelector(el);
 
-const url = `/objetoteste.json`;
+const url = `./objetoteste.json`;
 
 class App extends Component {
   constructor(props) {
