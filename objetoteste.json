@@ -1,0 +1,71 @@
+[
+
+    {   
+        "email": "teste@teste.com",
+        "senha": "teste",
+        "cpf": "123.123.123-12",
+        "compras": [
+            {
+                "codigo": "00001",
+                "valor": 12345,
+                "data": "01/02/2019",
+                "cbPercent": 0.15,
+                "cbValor": 1851,
+                "statusCadastro": "validacao"
+            },
+            {
+                "codigo": "00002",
+                "valor": 12345,
+                "data": "02/02/2019",
+                "cbPercent": 0.15,
+                "cbValor": 1851,
+                "statusCadastro": "aprovado"
+            },
+            {
+                "codigo": "00003",
+                "valor": 12345,
+                "data": "03/02/2019",
+                "cbPercent": 0.15,
+                "cbValor": 1851,
+                "statusCadastro": "reprovado"
+            }
+        ]
+    },
+    {   
+        "email": "abc@abc.com",
+        "senha": "abc",
+        "cpf": "123.456.789-01",
+        "compras": [
+            {
+                "codigo": "00001",
+                "valor": 12345,
+                "data": "01/02/2019",
+                "cbPercent": 0.15,
+                "cbValor": 1851,
+                "statusCadastro": "validacao"
+            },
+            {
+                "codigo": "00002",
+                "valor": 12345,
+                "data": "02/02/2019",
+                "cbPercent": 0.15,
+                "cbValor": 1851,
+                "statusCadastro": "aprovado"
+            },
+            {
+                "codigo": "00003",
+                "valor": 12345,
+                "data": "03/02/2019",
+                "cbPercent": 0.15,
+                "cbValor": 1851,
+                "statusCadastro": "reprovado"
+            }
+        ]
+    },
+    {   
+        "email": "teste@teste02.com",
+        "senha": "nofun",
+        "cpf": "111.111.111-11",
+        "compras": []
+    }
+]
