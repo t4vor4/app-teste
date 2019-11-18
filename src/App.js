@@ -5,7 +5,7 @@ import axios from 'axios';
 
 const $ = el => document.querySelector(el);
 
-const url = `./objetoteste.json`;
+const url = `/app-teste/objetoteste.json`;
 
 class App extends Component {
   constructor(props) {
@@ -165,7 +165,7 @@ class App extends Component {
     if (!valor) { alert('Insira um valor de compra'); return }
     if (!compra.data) { alert('Escolha uma data válida'); return }
 
-    if (!!$user.compras.length) {
+    if (!!$user.compras && !!$user.compras.length) {
       for (let i = 0; i < $user.compras.length; i++) {
         if ($user.compras[i].codigo === compra.codigo) { alert('Este código já existe'); return }
       }
@@ -178,7 +178,7 @@ class App extends Component {
 
     $user.compras.push(compra)
 
-    if (!!$users.length) {
+    if (!!$users && !!$users.length) {
       for (let i = 0; i < $users.length; i++) {
         if ($users[i].cpf === $user.cpf) $users[i] = $user
       }
@@ -351,8 +351,6 @@ class App extends Component {
     valor = valor.replace('R$ ', '')
 
     valor = valor.replace(',', '')
-
-    console.log(valor.length)
 
     const y = valor
 
