@@ -198,7 +198,7 @@ class App extends Component {
 
     const info = this.state.actualInfo;
 
-    if (!!info.compras.length) {
+    if (!!info.compras && !!info.compras.length) {
 
       const somando = (a, b) => parseInt(a) + parseInt(b);
 
@@ -206,7 +206,7 @@ class App extends Component {
 
       const total = info.compras.map(limpaValores).reduce(somando)
 
-      const totalArr = ((total*0.01).toString()).split('.')
+      const totalArr = (((total*0.01).toFixed(2)).toString()).split('.')
       
       console.log(totalArr)
       
@@ -280,7 +280,7 @@ class App extends Component {
 
     let teste = []
 
-    if (!!listaCompras.length) {
+    if (!!listaCompras && !!listaCompras.length) {
       for (let i = 0; i < listaCompras.length; i++) {
         const el = listaCompras[i];
         const escolha = event => {
